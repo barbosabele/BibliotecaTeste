@@ -11,4 +11,5 @@ Inicialmente, utilizei o Eclipse IDE, mas devido a algumas complicações com o 
 - **Usuário**: Cadastro e utilização de usuário
 
 O usuário possui um limite de aluguel de livros de um item; esse limite é atualizado quando o livro é devolvido.
+
 Por padrão, o livro estará disponível após ser cadastrado e será atualizado para indisponível após o aluguel.
