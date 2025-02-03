@@ -1,4 +1,5 @@
 package main;
+
 public class UsuarioController {
 
     private String nome;

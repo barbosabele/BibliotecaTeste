@@ -1,11 +1,12 @@
 package main;
+
 import java.util.ArrayList;
 
 public class BibliotecaController {
     private ArrayList<LivroController> livros;
     private ArrayList<UsuarioController> usuarios;
 
-    public BibliotecaController(){
+    public BibliotecaController() {
         livros = new ArrayList<LivroController>();
         usuarios = new ArrayList<UsuarioController>();
     }
@@ -30,7 +31,7 @@ public class BibliotecaController {
         livros.add(livro);
         System.out.println("O livro '" + livro.getTitulo() + "' foi cadastrado com sucesso!");
     }
-    
+
     public void CadastroUsuario(UsuarioController usuario) {
         usuarios.add(usuario);
         System.out.println("O usuário '" + usuario.getNome() + "' foi cadastrado com sucesso!");
@@ -40,16 +41,17 @@ public class BibliotecaController {
         for (UsuarioController usuario : usuarios) {
             if (usuario.getNome().equals(nome)) {
                 return usuario;
-        }
-    }
-        return null; // Retornará null se não encontrar o usuário
- }
-        public LivroController VerificarLivro(String titulo) {
-            for (LivroController livro : livros) {
-                if (livro.getTitulo().equals(titulo)) {
-                    return livro;
-                }
             }
+        }
+        return null; // Retornará null se não encontrar o usuário
+    }
+
+    public LivroController VerificarLivro(String titulo) {
+        for (LivroController livro : livros) {
+            if (livro.getTitulo().equals(titulo)) {
+                return livro;
+            }
+        }
 
         return null; // Retornará null se não encontrar o livro
     }

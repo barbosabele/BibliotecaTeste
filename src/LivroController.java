@@ -1,4 +1,5 @@
 package main;
+
 public class LivroController {
 
     private String titulo;
@@ -6,7 +7,7 @@ public class LivroController {
     private String genero;
     private boolean disponivel;
 
-    public LivroController(String titulo, String autor, String genero){
+    public LivroController(String titulo, String autor, String genero) {
         this.titulo = titulo;
         this.autor = autor;
         this.genero = genero;
@@ -45,7 +46,7 @@ public class LivroController {
         this.disponivel = disponivel;
     }
 
-    public String toString(){     
+    public String toString() {
         return String.format("Livro{titulo='%s', autor='%s', disponivel=%b}", titulo, autor, disponivel);
     }
 }
