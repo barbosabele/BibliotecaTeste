@@ -7,7 +7,7 @@ Inicialmente, utilizei o Eclipse IDE, mas devido a algumas complicações com o 
 
 ## Funcionalidades
 
-- `Livro`: Cadastro e empréstimo de livros
-- `Usuário`: Cadastro e uso de usuário
+- **Livro**: Cadastro e empréstimo de livros
+- **Usuário**: Cadastro e uso de usuário
 
 O usuário possui um limite de aluguel de livros de um item; esse limite é atualizado quando o livro é devolvido.
