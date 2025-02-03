@@ -25,11 +25,6 @@ public class UsuarioController {
         this.livroAlugado = livroAlugado;
     }
 
-    /**
-     * Método para concluir o aluguel do livro ao usuário caso esteja disponível.
-     * 
-     * @param LivroController
-     */
     public void alugarLivro(LivroController livro) {
         if (livro.isDisponivel()) {
             livroAlugado = livro;

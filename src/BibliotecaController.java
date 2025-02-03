@@ -42,7 +42,7 @@ public class BibliotecaController {
                 return usuario;
         }
     }
-        return null;
+        return null; // Retornará null se não encontrar o usuário
  }
         public LivroController VerificarLivro(String titulo) {
             for (LivroController livro : livros) {
@@ -51,6 +51,6 @@ public class BibliotecaController {
                 }
             }
 
-        return null;
+        return null; // Retornará null se não encontrar o livro
     }
 }

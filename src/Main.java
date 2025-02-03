@@ -6,16 +6,17 @@ public class Main {
         BibliotecaController biblioteca = new BibliotecaController();
         Scanner scanner = new Scanner(System.in);
 
+        // Cadastro de Livros
         biblioteca.CadastroLivro(new LivroController("O Duque e Eu", "Julia Quinn", "Romance"));
         biblioteca.CadastroLivro(new LivroController("Eu choro demais", "Luiza Rodrigues", "Drama"));
         biblioteca.CadastroLivro(new LivroController("It: A Coisa", "Stephen King", "Terror"));
         biblioteca.CadastroLivro(new LivroController("O Castelo de Otranto", "Horace Walpole", "Terror"));
         biblioteca.CadastroLivro(new LivroController("Sol da Meia-Noite", "Stephenie Meyer", "Terror"));
-        
+        // Cadastro de Usuários
         biblioteca.CadastroUsuario(new UsuarioController("Isabele"));
         biblioteca.CadastroUsuario(new UsuarioController("Luiza"));
 
-
+        // Interações com o Usuário
         while (true) {
             System.out.println("1. Alugar um Livro");
             System.out.println("2. Devolver um Livro");

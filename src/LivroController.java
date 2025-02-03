@@ -10,7 +10,7 @@ public class LivroController {
         this.titulo = titulo;
         this.autor = autor;
         this.genero = genero;
-        this.disponivel = true;
+        this.disponivel = true; // Por padrão, o livro estará disponível após o cadastro
     }
 
     public String getTitulo() {
